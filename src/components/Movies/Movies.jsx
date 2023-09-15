@@ -13,7 +13,7 @@ const Movies = ({ movies }) => {
       {movies?.length > 0 ? (
         <div className="movies-list">
           {movies.map((movie) => (
-            <NavLink key={movie.id} to={`/movies/${movie.id}`}>
+            <NavLink key={movie.id} to={`/movies/${movie.id}`} className="movie-link">
               <Movie movie={movie} />
             </NavLink>
           ))}

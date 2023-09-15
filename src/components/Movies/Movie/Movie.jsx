@@ -21,7 +21,9 @@ export const Movie = ({ movie }) => {
         <div className="title" data-testid="movie-title">
           {movie.original_title}
         </div>
+        <div className="movie-rating">
         <Rating rating="85/100" percentage={60} />
+        </div>
         <div className="genre">Action, adventure...</div>
       </div>
     </div>

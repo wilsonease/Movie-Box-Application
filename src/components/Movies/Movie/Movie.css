@@ -19,6 +19,10 @@
   padding-top: 20px;
 }
 
+.movie-rating{
+  color: var(--gray-900);
+}
+
 .movie-release-date,
 .genre {
   font-weight: 700;
