@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: double;
+}
+
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+.copyrght{
+     text-decoration-style: solid;
+}

@@ -1,0 +1,48 @@
+.thumbnail-container {
+  height: 449px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.movie-details-thumbnail {
+  width: 100%;
+  width: auto;
+  border-radius: 20px;
+}
+
+.movie-info {
+  padding: 0 60px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 23px;
+}
+
+.title {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.title > li:first-child {
+  list-style-type: none;
+}
+
+.other-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cast {
+  color: var(--rose-700);
+}
+
+.cast > span {
+  color: var(--gray-900);
+  font-weight: bold;
+}
