@@ -14,10 +14,10 @@ export const Footer = () => {
                     <a rel="stylesheet" href="https://facebook.com">
                         <img src={FacebookIcon} alt="facebook icon" />
                     </a>  
-                    <a rel="stylesheet" href="https://facebook.com">
+                    <a rel="stylesheet" href="https://instagram.com">
                         <img src={InstagramIcon} alt="facebook icon" />
                     </a>  
-                    <a rel="stylesheet" href="https://instagram.com">
+                    <a rel="stylesheet" href="https://twitter.com">
                         <img src={TwitterIcon} alt="facebook icon" />
                     </a>  
                     <a rel="stylesheet" href="https://facebook.com">
@@ -27,7 +27,7 @@ export const Footer = () => {
 
                 </div>
                 <div className="footer-links">Conditions of use  Privacy  Policy   Press </div>
-                <div className="copyright">copy right</div>
+                <div className="copyright">&copy; 2023 Movie Box By Wilson</div>
             </div>
         </footer>
     )

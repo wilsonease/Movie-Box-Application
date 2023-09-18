@@ -3,7 +3,7 @@ import { Movie } from "./Movie/Movie";
 import "./Movies.css";
 import { NavLink } from "react-router-dom";
 
-const Movies = ({ movies }) => {
+const Movies = ({ movies, loading }) => {
   return (
     <div className="movies">
       <div className="movies-header">

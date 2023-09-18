@@ -11,7 +11,7 @@ export const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState(null);
 
   useEffect(() => {
-    const apiUrl = `${movieUrl}/${id}?api_key=${apiKey}`;
+    const apiUrl = `${movieUrl}/movie/${id}?api_key=${apiKey}`;
 
     fetch(apiUrl)
       .then((response) => response.json())

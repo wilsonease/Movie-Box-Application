@@ -12,7 +12,7 @@ export const Movie = ({ movie }) => {
           src={`${imgUrl}${movie.poster_path}`}
           alt="movie thumbnail"
           data-testid="movie-poster"
-        />
+       />
       </div>
       <div className="movie-details">
         <div className="movie-release-date" data-testid="movie-release-date">

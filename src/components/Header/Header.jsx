@@ -3,10 +3,10 @@ import "./Header.css";
 import { Navbar } from "./Navbar/Navbar";
 import { FeatuedMovie } from "./FeaturedMovie/FeatuedMovie";
 
-export const Header = () => {
+export const Header = ({handleSearchChange, searchValue, handleSearchSubmit}) => {
   return (
     <header className="header">
-      <Navbar />
+      <Navbar handleSearchChange={handleSearchChange} searchValue={searchValue} handleSearchSubmit={handleSearchSubmit} />
       <FeatuedMovie />
     </header>
   );
