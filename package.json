@@ -1,7 +1,7 @@
 {
   "name": "hngx-stage2-task",
   "version": "0.1.0",
-  "homepage": "https://wilsonease.github.io/hngx-stage2-task",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
