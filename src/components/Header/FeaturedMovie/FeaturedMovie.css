@@ -9,22 +9,84 @@
 .featured-movie-title {
   font-weight: 700;
   font-size: 48px;
+  line-height: 1.2;
 }
 
 .rating {
   width: 184px;
+  max-width: 100%;
 }
 
 .watch-trailer-button {
   background-color: var(--rose-700);
   height: 36px;
   width: 169px;
+  max-width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   padding: 0 10px;
   color: var(--white);
   font-weight: 700;
   border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .featured-movie {
+    margin-top: 80px;
+    max-width: 350px;
+  }
+  
+  .featured-movie-title {
+    font-size: 42px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .featured-movie {
+    margin-top: 60px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .featured-movie-title {
+    font-size: 36px;
+  }
+  
+  .rating {
+    width: 160px;
+  }
+  
+  .watch-trailer-button {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-movie {
+    margin-top: 40px;
+    gap: 12px;
+  }
+  
+  .featured-movie-title {
+    font-size: 28px;
+  }
+  
+  .rating {
+    width: 140px;
+  }
+  
+  .watch-trailer-button {
+    width: 160px;
+    height: 36px;
+    font-size: 14px;
+  }
 }
 

@@ -16,7 +16,10 @@ export const FeatuedMovie = () => {
         the target of hit men and women everywhere.
       </div>
 
-      <button className="watch-trailer-button">
+      <button 
+        className="watch-trailer-button"
+        onClick={() => window.open('https://youtu.be/M7XM597XO94?si=a56mZof0uRCtDylq', '_blank')}
+      >
         <img src={PlayIcon} alt="play" />
         <span>Watch trailer</span>
       </button>

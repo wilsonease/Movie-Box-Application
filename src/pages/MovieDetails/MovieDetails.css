@@ -1,24 +1,33 @@
 .thumbnail-container {
   height: 449px;
+  max-height: 60vh;
   overflow: hidden;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .movie-details-thumbnail {
   width: 100%;
-  width: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 20px;
 }
 
 .movie-info {
   padding: 0 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 20px;
   font-size: 23px;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -26,6 +35,7 @@
   gap: 40px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .title > li:first-child {
@@ -40,9 +50,118 @@
 
 .cast {
   color: var(--rose-700);
+  line-height: 1.6;
 }
 
 .cast > span {
   color: var(--gray-900);
   font-weight: bold;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .thumbnail-container {
+    height: 400px;
+    margin-bottom: 25px;
+  }
+  
+  .movie-info {
+    padding: 0 40px;
+  }
+  
+  .title-container {
+    font-size: 21px;
+    gap: 15px;
+  }
+  
+  .title {
+    gap: 30px;
+  }
+  
+  .other-details {
+    gap: 18px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .thumbnail-container {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-info {
+    padding: 0 30px;
+  }
+  
+  .title-container {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 19px;
+    gap: 15px;
+  }
+  
+  .title {
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .other-details {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thumbnail-container {
+    height: 250px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+  }
+  
+  .movie-details-thumbnail {
+    border-radius: 15px;
+  }
+  
+  .movie-info {
+    padding: 0 20px;
+  }
+  
+  .title-container {
+    font-size: 17px;
+    gap: 12px;
+  }
+  
+  .title {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title > li {
+    text-align: center;
+  }
+  
+  .other-details {
+    gap: 12px;
+  }
+  
+  .cast {
+    font-size: 14px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .thumbnail-container {
+    height: 200px;
+  }
+  
+  .movie-info {
+    padding: 0 15px;
+  }
+  
+  .title-container {
+    font-size: 16px;
+  }
 }

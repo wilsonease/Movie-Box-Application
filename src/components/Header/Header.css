@@ -1,9 +1,35 @@
 .header{
     background-image: url("../../assets/img/header-bg.png");
-    height: 600px;
+    min-height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: var(--white);
     padding: 15px 95px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px 60px;
+        min-height: 500px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+        min-height: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 20px;
+        min-height: 400px;
+    }
 }
 
